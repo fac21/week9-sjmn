@@ -1,5 +1,13 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Roles
+
+- Facilitator - [Safia](https://github.com/fi-ya)
+- User Advocate - [Mariya](https://github.com/mariyapeychinova)
+- Deployment - [Nafisa](https://github.com/nafisa20)
+- Quality - [Jo](https://github.com/jamdelion)
+
+
 ## Getting Started
 
 First, run the development server:
