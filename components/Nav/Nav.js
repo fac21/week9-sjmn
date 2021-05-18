@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+import Image from 'next/image';
 import Container from '../Container/Container.js';
 
 import styles from './Nav.module.css';
@@ -12,6 +12,7 @@ export default function Nav({ children }) {
           <Link href="/">
             <a>
               RollerNuts
+              <Image src="/../../public/images/donut-logo.svg" alt="donut-logo" width={100} height={100} className=""></Image>
             </a>
           </Link>
         </p>
@@ -25,5 +26,6 @@ export default function Nav({ children }) {
         </p>
       </Container>
       </nav>
+
   )
 }

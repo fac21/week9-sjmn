@@ -7,7 +7,7 @@ import Nav from "../components/Nav/Nav.js";
 import Footer from "../components/Footer/Footer.js";
 import Container from "../components/Container/Container.js";
 
-export default function Home() {
+export default function Products() {
   return (
     <Layout>
       <Head>
@@ -16,16 +16,7 @@ export default function Home() {
       </Head>
 
       <Container>
-        <Link href='/products'>
-          <a>
-            <Image src='/../public/images/skates.jpg' className='' alt="Featured rollerskates" width={460} height={690}></Image>
-          </a>
-        </Link>
-        <Link href='/products'>
-          <a>
-            <Image src='/../public/images/donuts.jpg' className='' alt="Featured donuts" width={460} height={575}></Image>
-          </a>
-        </Link>
+        <h1> PRODUCTS</h1>
       </Container>
     </Layout>
   );
