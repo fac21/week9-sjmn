@@ -1,6 +1,6 @@
 const db = require('../../database/connection');
 
- function getProducts(req, res) {
+ function getProducts() {
   const selectProducts = `
   SELECT * FROM products 
   `;
@@ -8,7 +8,18 @@ const db = require('../../database/connection');
   .then((res) => {
    return res.rows;
   })
-}
+ }
 
-module.exports = { getProducts }
+ function getProductById(id) {
+  const selectProduct = `
+  SELECT * FROM products WHERE id=$1
+  `;
+  return db.query(selectProduct, [id])
+  .then((res) => {
+   return res.rows[0];
+  })
+ }
+
+
+module.exports = { getProducts, getProductById }
 
