@@ -16,8 +16,8 @@ export async function getStaticProps({ req, res }) {
     props: { productData },
   };
 }
-  
-export default function Products({productData}) {
+
+export default function Products({ productData }) {
   const productsArray = JSON.parse(productData);
   return (
     <Layout>
@@ -27,25 +27,36 @@ export default function Products({productData}) {
       </Head>
 
       <Container>
-        <h1> PRODUCTS</h1>
-        {productsArray ? (
-        <ul>
-          {productsArray.map((product) => {
-            console.log(product);
-            <li key={product.id}>
-              <Link href="/products/[id]" as={`/products/${product.id}`}>
-                <a>
-                  <Image src={product.image} alt={product.name} width={400} height={400} className="">
-                    </Image>
-                </a>
-              </Link>
-              
-            </li>
-})}
-        </ul>
-      ) : (
-        <div>Loading products...</div>
-      )}
+        <>
+          <h1> PRODUCTS</h1>
+          <ul>
+            {productsArray.map((product) => {
+              console.log("hello", product.image);
+              return (
+                <li key={product.id}>
+                  <p>{product.name}</p>
+                  <>
+                    <Link href="/products/[id]" as={`/products/${product.id}`}>
+                      <a>
+                        <div>
+                          <>
+                            <Image
+                              src={product.image}
+                              alt={product.name}
+                              width={400}
+                              height={400}
+                              className=""
+                            />
+                          </>
+                        </div>
+                      </a>
+                    </Link>
+                  </>
+                </li>
+              );
+            })}
+          </ul>
+        </>
       </Container>
     </Layout>
   );

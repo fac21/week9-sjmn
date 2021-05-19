@@ -16,16 +16,30 @@ export default function Home() {
       </Head>
 
       <Container>
-        <Link href='/products'>
-          <a>
-            <Image src='/../public/images/skates.jpg' className='' alt="Featured rollerskates" width={460} height={690}></Image>
-          </a>
-        </Link>
-        <Link href='/products'>
-          <a>
-            <Image src='/../public/images/donuts.jpg' className='' alt="Featured donuts" width={460} height={575}></Image>
-          </a>
-        </Link>
+        <>
+          <Link href="/products">
+            <a>
+              <Image
+                src="/../public/images/skates.jpg"
+                className=""
+                alt="Featured rollerskates"
+                width={460}
+                height={690}
+              />
+            </a>
+          </Link>
+          <Link href="/products">
+            <a>
+              <Image
+                src="/../public/images/donuts.jpg"
+                className=""
+                alt="Featured donuts"
+                width={460}
+                height={575}
+              />
+            </a>
+          </Link>
+        </>
       </Container>
     </Layout>
   );
