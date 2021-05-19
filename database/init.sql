@@ -10,7 +10,7 @@ CREATE TABLE categories (
 CREATE TABLE products (
   id SERIAL PRIMARY KEY,
   name TEXT NOT NULL,
-  image BYTEA NOT NULL,
+  image text,
   description TEXT,
   price INTEGER,
   category_id INTEGER REFERENCES categories(id)
@@ -31,7 +31,7 @@ INSERT INTO categories (name) VALUES (
 
 INSERT INTO products (name, image, description, price) VALUES (
   'Moxi Lolly Strawberry Rollerskates',
-  pg_read_binary_file('/Users/safiaali/desktop/fac21/Week9-full-stack-app/week9-sjmn/public/images/Moxi-Lolly-Strawberry-Rollerskates.jpg'),
+  '/public/images/Moxi-Lolly-Strawberry-Rollerskates.jpg',
   'The Moxi Lolly Strawberry Rollerskates are the crème de la crème of the rollerskating world. Moxi was born from the passion of famous Los Angeles roller derby player Michelle Steilen (Estro Jen). She wanted to take rollerskating back to a place where it was cool. It is safe to say; mission accomplished.' ,
   299
 );
