@@ -28,11 +28,18 @@ INSERT INTO categories (name) VALUES (
 
   );
 
-INSERT INTO products (name, image, description, price) VALUES (
-  'Moxi Lolly Strawberry Rollerskates',
+INSERT INTO products (name, image, description, price) VALUES
+(
+  'Strawberry Rollerskates',
   '/../public/images/Moxi-Lolly-Strawberry-Rollerskates.jpg',
   'The Moxi Lolly Strawberry Rollerskates are the crème de la crème of the rollerskating world. Moxi was born from the passion of famous Los Angeles roller derby player Michelle Steilen (Estro Jen). She wanted to take rollerskating back to a place where it was cool. It is safe to say; mission accomplished.' ,
   299
+),
+(
+  'Poppy Rollerskates',
+'/../public/images/Moxi-Lolly-Poppy-Rollerskate.jpg',
+'The Moxi Lolly Poppy Rollerskates are undoubtedly the best you can buy. Moxi began from the love of famous Los Angeles roller derby player Michelle Steilen (Estro Jen). She wanted to elevate rollerskating to a place where it was playful and original. It is safe to say: mission accomplished.',
+299
 );
 
 -- INSERT INTO product_details VALUES (name, description, price)  (
