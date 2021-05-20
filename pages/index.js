@@ -3,8 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout/Layout.js";
-import Nav from "../components/Nav/Nav.js";
-import Footer from "../components/Footer/Footer.js";
+// import Nav from "../components/Nav/Nav.js";
+// import Footer from "../components/Footer/Footer.js";
 import Container from "../components/Container/Container.js";
 
 export default function Home() {
@@ -20,11 +20,11 @@ export default function Home() {
           <Link href="/products">
             <a>
               <Image
-                src="/../public/images/skates.jpg"
+                src="/../public/images/skates1.jpg"
                 className=""
                 alt="Featured rollerskates"
                 width={460}
-                height={690}
+                height={575}
               />
             </a>
           </Link>

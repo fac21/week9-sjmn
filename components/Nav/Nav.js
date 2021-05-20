@@ -9,6 +9,7 @@ export default function Nav({ children }) {
     <nav className={styles.nav}>
       <Container className={styles.navContainer}>
         <p className={styles.title}>
+          <>
           <Link href="/">
             <a>
               RollerNuts
@@ -18,9 +19,10 @@ export default function Nav({ children }) {
                 width={100}
                 height={100}
                 className=""
-              ></Image>
+              />
             </a>
-          </Link>
+            </Link>
+            </>
         </p>
 
         <p className={styles.description}>
