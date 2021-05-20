@@ -19,6 +19,14 @@ export async function getStaticProps() {
 
 export default function Products({ productData }) {
   const productsArray = JSON.parse(productData);
+
+  function createCookie() {
+    return productsArray.map((product) => {
+      document.cookie = `name = ${product.name}, image=${product.image}, description=${product.description}`;
+      console.log(document.cookie);
+    });
+  }
+
   return (
     <Layout>
       <Head>
@@ -31,7 +39,6 @@ export default function Products({ productData }) {
           <h1> PRODUCTS</h1>
           <ul>
             {productsArray.map((product) => {
-              console.log("hello", product.image);
               return (
                 <li key={product.id}>
                   <p>{product.name}</p>
@@ -52,6 +59,7 @@ export default function Products({ productData }) {
                       </a>
                     </Link>
                   </>
+                  <button onClick={createCookie}>Add to basket</button>
                 </li>
               );
             })}
