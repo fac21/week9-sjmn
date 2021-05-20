@@ -11,7 +11,7 @@ Our [project brief](https://learn.foundersandcoders.com/course/syllabus/full-sta
 
 ## Concept
 
-We decided on selling donuts and rollerskates.
+We decided on selling donuts and rollerskates. 🛹 🍩
 
 ## Acceptance criteria :
 -Server-rendered with Next.js
