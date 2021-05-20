@@ -32,7 +32,7 @@ export default function Nav({ children }) {
             style={{ textDecoration: "none" }}
           >
             <strong className="sr-only">Cart</strong>
-            <span className="snipcart-total-price">$0.00</span>
+            <span className="snipcart-total-price">£0.00</span>
           </a>
         </p>
       </Container>

@@ -8,6 +8,11 @@
   height: 100vh;
 }
 
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main {
   padding: 5rem 0;
   flex: 1;
