@@ -10,40 +10,37 @@ import Container from "../components/Container/Container.js";
 export default function Home() {
   return (
     <Layout>
-        <Head>
-          <title>RollerNuts</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <Container>
-          <>
-            <Link href="/products">
-              <a>
-                <>
-                  <Image
-                    src="/../public/images/skates.jpg"
-                    className=""
-                    alt="Featured rollerskates"
-                    width={460}
-                    height={690}
-                  />
-                </>
-              </a>
-            </Link>
-          </>
-          <>
-            <Link href="/products">
-              <a>
-                <Image
-                  src="/../public/images/donuts.jpg"
-                  className=""
-                  alt="Featured donuts"
-                  width={460}
-                  height={575}
-                />
-              </a>
-            </Link>
-          </>
-        </Container>
+      <Head>
+        <title>RollerNuts</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <Container>
+        <>
+          <Link href="/products">
+            <a>
+              <Image
+                src="/../public/images/skates1.jpg"
+                className=""
+                alt="Featured rollerskates"
+                width={460}
+                height={575}
+              />
+            </a>
+          </Link>
+          <Link href="/products">
+            <a>
+              <Image
+                src="/../public/images/donuts.jpg"
+                className=""
+                alt="Featured donuts"
+                width={460}
+                height={575}
+              />
+            </a>
+          </Link>
+        </>
+      </Container>
     </Layout>
   );
 }
