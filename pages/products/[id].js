@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 import styles from "../../styles/Home.module.css";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -20,6 +21,7 @@ export default function Product(props) {
   // React.useEffect(() => {
   //   // do we need this to update the UI of the basket?
   // })
+
 
   const router = useRouter();
   // const { pid } = router.query
@@ -54,17 +56,19 @@ export default function Product(props) {
     }
   };
 
+
   function addToBasket() {
     console.log("button clicked", document.cookie);
     // check cookie, if none set with one
-    !document.cookie ? makeCookie() : checkExisitingCookie();
-  }
-  // set a long max age, array of objects
+    !(document.cookie) ? makeCookie() : checkExisitingCookie()
+    }
+   // set a long max age, array of objects
 
-  return (
-    <>
-      <Layout>
-        <Container>
+    return (
+        <>
+        <Layout>
+
+      <Container>
           <h1>{props.productData.name}</h1>
           <>
             <Image
@@ -77,10 +81,15 @@ export default function Product(props) {
           </>
           <p>{props.productData.description}</p>
           <button onClick={addToBasket}>Add to basket</button>
+
+          <>
+          <Link href='/checkout'><a>Go to checkout</a></Link> </>
+          <>
+          <Link href='/'><a>Go back to homepage</a></Link> </>
         </Container>
-      </Layout>
-    </>
-  );
+        </Layout>
+        </>
+    )
 }
 
 export async function getStaticPaths() {
