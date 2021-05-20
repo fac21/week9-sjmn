@@ -81,6 +81,8 @@ export default function Product(props) {
           <p>{props.productData.description}</p>
           <button onClick={addToBasket}>Add to basket</button>
           <>
+          <Link href='/checkout'><a>Go to checkout</a></Link> </>
+          <>
           <Link href='/'><a>Go back to homepage</a></Link> </>
         </Layout>
         </>
