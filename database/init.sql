@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS products, product_details, categories CASCADE;
 
 CREATE TABLE categories (
  id SERIAL PRIMARY KEY,
-  name VARCHAR(100)
+ name VARCHAR(100)
 );
 
 CREATE TABLE products (
@@ -13,6 +13,7 @@ CREATE TABLE products (
   image text,
   description TEXT,
   price INTEGER,
+  category TEXT,
   category_id INTEGER REFERENCES categories(id)
 );
 
@@ -23,28 +24,61 @@ id SERIAL PRIMARY KEY,
  colour VARCHAR(50)
 );
 
-INSERT INTO categories (name) VALUES (
-  ('skates')
+INSERT INTO categories (name) VALUES 
+('skates'),
+('donuts');
 
-  );
-
-INSERT INTO products (name, image, description, price) VALUES
+INSERT INTO products (name, image, description, price, category) VALUES
 (
   'Strawberry Rollerskates',
   '/../public/images/Moxi-Lolly-Strawberry-Rollerskates.jpg',
-  'The Moxi Lolly Strawberry Rollerskates are the crème de la crème of the rollerskating world. Moxi was born from the passion of famous Los Angeles roller derby player Michelle Steilen (Estro Jen). She wanted to take rollerskating back to a place where it was cool. It is safe to say; mission accomplished.' ,
-  299
+  'You will love these skates' ,
+  199,
+  'skates'
 ),
 (
   'Poppy Rollerskates',
 '/../public/images/Moxi-Lolly-Poppy-Rollerskate.jpg',
-'The Moxi Lolly Poppy Rollerskates are undoubtedly the best you can buy. Moxi began from the love of famous Los Angeles roller derby player Michelle Steilen (Estro Jen). She wanted to elevate rollerskating to a place where it was playful and original. It is safe to say: mission accomplished.',
-299
+'You will love these skates ',
+299,
+'skates'
+),
+(
+  'Epic Bubblegum Rollerskates',
+'/../public/images/skate3.jpg',
+'You will love these skates',
+150,
+'skates'
+),
+  ('Electic Green Rollerskates ',
+'/../public/images/skate4.jpg',
+'You will love these skates',
+150,
+'skates'
+),
+  ('Caramel Donuts ',
+'/../public/images/donut1.jpg',
+'You will love these donuts',
+3,
+'donuts'
+),
+  ('Strawberry Glazed Donuts',
+'/../public/images/donut2.jpg',
+'You will love these donuts',
+4,
+'donuts'
+),
+  ('Chocolate Sprinkled Donuts',
+'/../public/images/donut3.jpg',
+'You will love these donuts',
+2,
+'donuts'
+),
+ ('Belgian Chocolate Donuts',
+'/../public/images/donut4.jpg',
+'You will love these donuts',
+2,
+'donuts'
 );
-
--- INSERT INTO product_details VALUES (name, description, price)  (
---   '' ,
---   ''
--- )
 
 COMMIT;

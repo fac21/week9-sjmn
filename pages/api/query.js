@@ -1,25 +1,23 @@
-const db = require('../../database/connection');
+const db = require("../../database/connection");
 
- function getProducts() {
+function getProducts() {
   const selectProducts = `
   SELECT * FROM products 
   `;
-  return db.query(selectProducts)
-  .then((res) => {
-   return res.rows;
-  })
- }
+  return db.query(selectProducts).then((res) => {
+    return res.rows;
+  });
+}
 
- function getProductById(id) {
+function getProductById(id) {
   const selectProduct = `
   SELECT * FROM products WHERE id=$1
   `;
-  return db.query(selectProduct, [id])
-  .then((res) => {
-   return res.rows[0];
-  })
- }
+  return db.query(selectProduct, [id]).then((res) => {
+    return res.rows[0];
+  });
+}
 
 
-module.exports = { getProducts, getProductById }
 
+module.exports = { getProducts, getProductById };
