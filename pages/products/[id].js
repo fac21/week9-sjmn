@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 import styles from "../../styles/Home.module.css";
 import Image from "next/image";
 import { useRouter } from 'next/router';
@@ -26,7 +27,7 @@ export default function Product(props) {
     if (router.isFallback) {
       return <div>Loading product...</div>;
     }
-  
+
     const makeCookie = () => {
       let test = { [props.productData.id]: 1 };
       let parsed = JSON.stringify(test);
@@ -54,16 +55,16 @@ export default function Product(props) {
       console.log("oldCookie should have incremented", oldCookie)
       document.cookie = oldCookie;
     }
-     
+
   }
-    
+
   function addToBasket() {
     console.log("button clicked", document.cookie)
     // check cookie, if none set with one
     !(document.cookie) ? makeCookie() : checkExisitingCookie()
     }
    // set a long max age, array of objects
-     
+
     return (
         <>
         <Layout>
@@ -79,6 +80,8 @@ export default function Product(props) {
             </>
           <p>{props.productData.description}</p>
           <button onClick={addToBasket}>Add to basket</button>
+          <>
+          <Link href='/'><a>Go back to homepage</a></Link> </>
         </Layout>
         </>
     )

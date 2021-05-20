@@ -60,7 +60,7 @@ export default function Products({ productData }) {
                         </a>
                       </Link>
                     </>
-                    <button onClick={createCookie}>Add to basket</button>
+
                   </li>
                 );
               })
