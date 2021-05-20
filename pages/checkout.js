@@ -5,13 +5,15 @@ import styles from "../styles/Home.module.css";
 
 export default function Checkout({}) {
 
-
-
-
   return (
     <Layout>
       <Container>
-        <div>
+        <div className={styles.flexContainer}>
+          <p className={styles}>Product</p>
+          <p>Description</p>
+          <p>Price</p>
+        </div>
+        <div className="basketList" className={styles.flexContainer}>
           <p className={styles}>Product</p>
           <p>Description</p>
           <p>Price</p>

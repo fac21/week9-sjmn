@@ -22,13 +22,6 @@ export default function Products({ productData }) {
   const productsArray = JSON.parse(productData);
   console.log(productsArray);
 
-  function createCookie() {
-    return productsArray.map((product) => {
-      document.cookie = `name = ${product.name}, image=${product.image}, description=${product.description}`;
-      console.log(document.cookie);
-    });
-  }
-
   return (
     <Layout>
       <Head>
