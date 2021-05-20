@@ -1,3 +1,4 @@
+import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
@@ -19,6 +20,7 @@ export async function getStaticProps() {
 
 export default function Products({ productData }) {
   const productsArray = JSON.parse(productData);
+  console.log(productsArray);
 
   function createCookie() {
     return productsArray.map((product) => {
@@ -37,32 +39,39 @@ export default function Products({ productData }) {
       <Container>
         <>
           <h1> PRODUCTS</h1>
+
           <ul>
-            {productsArray.map((product) => {
-              return (
-                <li key={product.id}>
-                  <p>{product.name}</p>
-                  <>
-                    <Link href="/products/[id]" as={`/products/${product.id}`}>
-                      <a>
-                        <div>
-                          <>
-                            <Image
-                              src={product.image}
-                              alt={product.name}
-                              width={400}
-                              height={400}
-                              className=""
-                            />
-                          </>
-                        </div>
-                      </a>
-                    </Link>
-                  </>
-                  <button onClick={createCookie}>Add to basket</button>
-                </li>
-              );
-            })}
+            {
+              // productsArray.length ?
+              productsArray.map((product) => {
+                return (
+                  <li key={product.id}>
+                    <p>{product.name}</p>
+                    <>
+                      <Link
+                        href="/products/[id]"
+                        as={`/products/${product.id}`}
+                      >
+                        <a>
+                          <div>
+                            <>
+                              <Image
+                                src={product.image}
+                                alt={product.name}
+                                width={400}
+                                height={400}
+                                className=""
+                              />
+                            </>
+                          </div>
+                        </a>
+                      </Link>
+                    </>
+                    <button onClick={createCookie}>Add to basket</button>
+                  </li>
+                );
+              })
+            }
           </ul>
         </>
       </Container>
