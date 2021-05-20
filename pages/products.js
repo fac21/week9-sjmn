@@ -31,14 +31,14 @@ export default function Products({ productData }) {
 
       <Container>
         <>
-          <h1> PRODUCTS</h1>
+          <h1 className={styles.title}> PRODUCTS</h1>
 
-          <ul>
+          <div className={styles.grid}>
             {
               // productsArray.length ?
               productsArray.map((product) => {
                 return (
-                  <li key={product.id}>
+                  <div key={product.id}>
                     <p>{product.name}</p>
                     <>
                       <Link
@@ -60,12 +60,11 @@ export default function Products({ productData }) {
                         </a>
                       </Link>
                     </>
-                    <button onClick={createCookie}>Add to basket</button>
-                  </li>
+                  </div>
                 );
               })
             }
-          </ul>
+          </div>
         </>
       </Container>
     </Layout>

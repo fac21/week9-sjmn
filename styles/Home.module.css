@@ -8,6 +8,12 @@
   height: 100vh;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
 .flexContainer {
   display: flex;
   justify-content: space-between;
@@ -74,14 +80,14 @@
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-.grid {
+/* .grid {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
   margin-top: 3rem;
-}
+} */
 
 .card {
   margin: 1rem;
