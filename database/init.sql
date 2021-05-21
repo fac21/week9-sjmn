@@ -38,14 +38,14 @@ INSERT INTO products (name, image, description, price, category) VALUES
 ),
 (
   'Poppy Rollerskates',
-'/../images/Moxi-Lolly-Poppy-Rollerskate.jpg',
+'/images/Moxi-Lolly-Poppy-Rollerskate.jpg',
 'You will love these skates ',
 299,
 'skates'
 ),
 (
   'Epic Bubblegum Rollerskates',
-'/../images/skate3.jpg',
+'/images/skate3.jpg',
 'You will love these skates',
 150,
 'skates'
