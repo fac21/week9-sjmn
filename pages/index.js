@@ -20,7 +20,7 @@ export default function Home() {
           <Link href="/products">
             <a>
               <Image
-                src="/../public/images/skates1.jpg"
+                src="/images/skates1.jpg"
                 className=""
                 alt="Featured rollerskates"
                 width={460}
@@ -31,7 +31,7 @@ export default function Home() {
           <Link href="/products">
             <a>
               <Image
-                src="/../public/images/donuts.jpg"
+                src="/images/donuts.jpg"
                 className=""
                 alt="Featured donuts"
                 width={460}
