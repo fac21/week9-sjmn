@@ -31,7 +31,7 @@ INSERT INTO categories (name) VALUES
 INSERT INTO products (name, image, description, price, category) VALUES
 (
   'Strawberry Rollerskates',
-  '/../public/images/Moxi-Lolly-Strawberry-Rollerskates.jpg',
+  '/images/Moxi-Lolly-Strawberry-Rollerskates.jpg',
   'You will love these skates' ,
   199,
   'skates'
@@ -51,31 +51,31 @@ INSERT INTO products (name, image, description, price, category) VALUES
 'skates'
 ),
   ('Electic Green Rollerskates ',
-'/../images/skate4.jpg',
+'/images/skate4.jpg',
 'You will love these skates',
 150,
 'skates'
 ),
   ('Caramel Donuts ',
-'/../images/donut1.jpg',
+'/images/donut1.jpg',
 'You will love these donuts',
 3,
 'donuts'
 ),
   ('Strawberry Glazed Donuts',
-'/../images/donut2.jpg',
+'/images/donut2.jpg',
 'You will love these donuts',
 4,
 'donuts'
 ),
   ('Chocolate Sprinkled Donuts',
-'/../images/donut3.jpg',
+'/images/donut3.jpg',
 'You will love these donuts',
 2,
 'donuts'
 ),
  ('Belgian Chocolate Donuts',
-'/../images/donut4.jpg',
+'/images/donut4.jpg',
 'You will love these donuts',
 2,
 'donuts'

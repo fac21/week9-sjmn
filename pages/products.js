@@ -9,7 +9,7 @@ import Footer from "../components/Footer/Footer.js";
 import Container from "../components/Container/Container.js";
 import { getProducts } from "../pages/api/query";
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const allProducts = await getProducts();
   const productData = JSON.stringify(allProducts);
 

@@ -14,6 +14,7 @@ Our [project brief](https://learn.foundersandcoders.com/course/syllabus/full-sta
 We decided on selling donuts and rollerskates. 🛹 🍩
 
 ## Acceptance criteria :
+
 -Server-rendered with Next.js
 -Hosted on Vercel
 -Data stored in AWS Postgres
@@ -24,8 +25,8 @@ We decided on selling donuts and rollerskates. 🛹 🍩
 -Basket contents saved for future visits
 
 ## Stretch:
--Quantity/colour/variant pickers
 
+-Quantity/colour/variant pickers
 
 ## Screenshots:
 
@@ -35,16 +36,15 @@ Design
 
 ![image](https://user-images.githubusercontent.com/31373245/119019505-29f32b80-b995-11eb-9854-1e0941d75d31.png)
 
-
 ## Known Issues
 
 - :heavy_multiplication_x: -Basket contents saved for future visits and adding to basket
 - :heavy_multiplication_x: -Cookies need to be refactored to local storage
 
-
 ## Getting Started
 
-First, run the development server:
+After cloning first run `npm install`.
+Then, run the development server:
 
 ```bash
 npm run dev
