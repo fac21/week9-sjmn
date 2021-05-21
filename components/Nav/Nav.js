@@ -27,7 +27,7 @@ export default function Nav({ children }) {
               <a>
                 RollerNuts
                 <Image
-                  src="/../public/images/donut-logo.svg"
+                  src="/../images/donut-logo.svg"
                   alt="donut-logo"
                   width={100}
                   height={100}

@@ -38,44 +38,44 @@ INSERT INTO products (name, image, description, price, category) VALUES
 ),
 (
   'Poppy Rollerskates',
-'/../public/images/Moxi-Lolly-Poppy-Rollerskate.jpg',
+'/../images/Moxi-Lolly-Poppy-Rollerskate.jpg',
 'You will love these skates ',
 299,
 'skates'
 ),
 (
   'Epic Bubblegum Rollerskates',
-'/../public/images/skate3.jpg',
+'/../images/skate3.jpg',
 'You will love these skates',
 150,
 'skates'
 ),
   ('Electic Green Rollerskates ',
-'/../public/images/skate4.jpg',
+'/../images/skate4.jpg',
 'You will love these skates',
 150,
 'skates'
 ),
   ('Caramel Donuts ',
-'/../public/images/donut1.jpg',
+'/../images/donut1.jpg',
 'You will love these donuts',
 3,
 'donuts'
 ),
   ('Strawberry Glazed Donuts',
-'/../public/images/donut2.jpg',
+'/../images/donut2.jpg',
 'You will love these donuts',
 4,
 'donuts'
 ),
   ('Chocolate Sprinkled Donuts',
-'/../public/images/donut3.jpg',
+'/../images/donut3.jpg',
 'You will love these donuts',
 2,
 'donuts'
 ),
  ('Belgian Chocolate Donuts',
-'/../public/images/donut4.jpg',
+'/../images/donut4.jpg',
 'You will love these donuts',
 2,
 'donuts'

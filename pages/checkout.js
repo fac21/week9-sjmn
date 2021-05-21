@@ -3,8 +3,7 @@ import Container from "../components/Container/Container.js";
 import Layout from "../components/Layout/Layout.js";
 import styles from "../styles/Home.module.css";
 
-export default function Checkout({}) {
-
+export default function Checkout() {
   return (
     <Layout>
       <Container>
@@ -22,4 +21,3 @@ export default function Checkout({}) {
     </Layout>
   );
 }
-
